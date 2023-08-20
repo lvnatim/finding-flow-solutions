@@ -1,0 +1,11 @@
+{% if matrixBlock.mainContent %}
+<section>
+    <div class="container my-24">
+        <div class="w-2/3 lead {{ matrixBlock.alignment == 'left' ? '' : 'mx-auto text-center' }}">
+            {% if matrixBlock.heading %}<h2>{{ matrixBlock.heading }}</h2>{% endif %}
+            {{ matrixBlock.mainContent }}
+            {% if matrixBlock.href %}<a class="btn" href="{{ matrixBlock.href }}"><span>{{ matrixBlock.label ? matrixBlock.label : 'Go to Purchase' }}</span></a>{% endif %}
+        </div>
+    </div>
+</section>
+{% endif %}

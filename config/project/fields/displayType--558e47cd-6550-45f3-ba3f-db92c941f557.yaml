@@ -1,0 +1,34 @@
+columnSuffix: cbfuofxd
+contentColumnType: string
+fieldGroup: c6e47093-5583-4acc-b6e6-9acfda9c212b # Common
+handle: displayType
+instructions: null
+name: 'Display Type'
+searchable: false
+settings:
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Row
+        -
+          - value
+          - row
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - Card
+        -
+          - value
+          - card
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

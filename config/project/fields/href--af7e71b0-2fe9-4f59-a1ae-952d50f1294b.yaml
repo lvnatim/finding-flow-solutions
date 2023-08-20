@@ -1,0 +1,14 @@
+columnSuffix: uarjgkrc
+contentColumnType: string(255)
+fieldGroup: c6e47093-5583-4acc-b6e6-9acfda9c212b # Common
+handle: href
+instructions: null
+name: Link
+searchable: false
+settings:
+  maxLength: 255
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

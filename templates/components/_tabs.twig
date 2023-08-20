@@ -1,0 +1,30 @@
+<section>
+    <div class="container my-24">
+        {% if matrixBlock.heading %}
+        <h2 id="tablist-heading" class="text-center mb-16">{{ matrixBlock.heading }}</h2>
+        {% endif %}
+        <div class="w-9/12 mx-auto flex tabs">
+            <div class="w-1/4">
+                <div class="border-blend">
+                    <div role="tablist" aria-labelledby="tablist-heading" class="automatic">
+                        {% for tab in matrixBlock.getDescendants(1) %}
+                            <button id="tab-{{ loop.index }}" type="button" role="tab" aria-selected="{{ loop.index == 1 ? 'true' : 'false' }}" aria-controls="tabpanel-{{ loop.index }}" {{ loop.index != 1 ? 'tabindex="-1"'}}>
+                                <span>{{ tab.heading }}</span>
+                            </button>
+                        {% endfor %}
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="w-3/4 pl-16">
+            {% for tab in matrixBlock.getDescendants(1) %}
+                <div id="tabpanel-{{ loop.index }}" class="{{ loop.index != 1 ? 'hidden' }}" role="tabpanel" tabindex="0" aria-labelledby="tab-{{ loop.index }}">
+                    {% if tab.subheading %}<h3><u>{{ tab.subheading }}</u></h3>{% endif %}
+                    {{ tab.mainContent }}
+                    {% if tab.href %}<a class="btn" href="{{ tab.href }}"><span>{{ tab.label ? tab.label : 'Learn More' }}</span></a>{% endif %}
+                </div>
+            {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

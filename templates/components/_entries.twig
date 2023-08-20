@@ -1,0 +1,29 @@
+<section>
+    <div class="container my-24">
+        {% if matrixBlock.heading %}<h2 class="text-center">{{ matrixBlock.heading }}</h2>{% endif %}
+        {% if matrixBlock.displayType == 'card' %}<div class="grid grid-cols-3 gap-x-10">{% endif %}
+        {% for entry in matrixBlock.entries.all() %}
+            {% set icon = entry.icon ? entry.icon.one() : (entry.image ? entry.image.one()) %}
+            {% if matrixBlock.displayType == 'card' %}
+                <a href="{{ entry.url }}" class="border-[4px] border-black rounded-[30px] p-3">
+                    {% if icon %}
+                        <img src="{{ icon.url }}" alt="{{ icon.alt }}"/>
+                    {% endif %}
+                    <h4 class="pt-2 pb-4 text-center">{{ entry.title }}</h4>
+                </a>
+            {% else %}
+                <div class="flex items-center mb-6">
+                    {% if icon %}
+                        <div class="flex items-center justify-center -mr-4 shrink-0 z-20" style="height:90px;width:140px;"><img src="{{ icon.url }}" alt="{{ icon.alt }}"/></div>
+                    {% endif %}
+                    <div class="w-full bg-white border border-grey box-shadow py-8 px-12 rounded-[30px] flex items-center justify-between">
+                        <h3 class="mb-0"><strong>{{ entry.heading ? entry.heading : entry.title }}</strong></h3>
+                        <a class="btn" href="{{ entry.url }}"><span>{{ 'Learn More'|t }}</span></a>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+        {% if matrixBlock.displayType == 'card' %}</div>{% endif %}
+        {% if matrixBlock.href %}<div class="text-center mt-8"><a class="btn" href="{{ matrixBlock.href }}"><span>{{ matrixBlock.label ? matrixBlock.label : 'Learn More' }}</span></a></div>{% endif %}
+    </div>
+</section>

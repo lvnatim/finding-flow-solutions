@@ -1,0 +1,15 @@
+defaultPlacement: end
+enableVersioning: true
+handle: resources
+name: Resources
+propagationMethod: all
+siteSettings:
+  151384ef-d890-48a6-afc0-ec0b64beb573: # Finding Flow Solutions
+    enabledByDefault: true
+    hasUrls: true
+    template: _builder.twig
+    uriFormat: 'resource/{slug}'
+structure:
+  maxLevels: null
+  uid: a5d7cf6b-f834-4419-aa04-19ee5fb1032f
+type: structure

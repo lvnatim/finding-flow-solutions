@@ -1,0 +1,12 @@
+<section>
+    <div class="container my-24">
+        {% if matrixBlock.heading %}<h2 class="text-center mb-12">{{ matrixBlock.heading }}<h2>{% endif %}
+        <div class="grid grid-cols-2 gap-x-8 gap-y-6 w-3/4 mx-auto">
+            {% for button in matrixBlock.getDescendants(1) %}
+                <a href="{{ button.href }}" class="btn large">
+                    <span><h3 class="mb-0 text-center">{{ button.label }}</h3></span>
+                </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>

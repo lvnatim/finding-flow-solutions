@@ -1,0 +1,67 @@
+fieldLayouts:
+  9f522b96-bd61-4de2-a309-321a466c2cb7:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: e2e37a16-6ad2-49cc-a0ca-c343c5896ac0
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b9c72c2c-3f0c-4da5-bb87-6f5217376e53 # Image
+            instructions: 'Used when this entry is rendered dynamically on other pages through the builder "Entries" component.'
+            label: Thumbnail
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0319064e-8dbb-4fed-b9ac-bf4c08852448
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2d58a77a-5f3a-4a5a-bb66-9716f5433ca8 # Builder
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6c304c93-090c-4800-8d0c-81a4fee84bec
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 91bcf55e-3da8-41ed-87c3-662845fbab01
+        userCondition: null
+handle: default
+hasTitleField: true
+name: Default
+section: b7ed00de-59e8-46ee-a2a5-dec21d8042be # Resources
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

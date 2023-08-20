@@ -1,0 +1,88 @@
+dateModified: 1692393516
+email:
+  fromEmail: tim.lu@ourlog.ca
+  fromName: 'Finding Flow Solutions'
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  uploads:
+    hasUrls: true
+    name: Uploads
+    settings:
+      path: '@webroot/uploads'
+    type: craft\fs\Local
+    url: '@web/uploads'
+meta:
+  __names__:
+    0d6a3bb8-fd8d-4ad2-9bc1-02b87b8d1bbd: Text # Text
+    0e1b3603-b225-4550-ae51-552c4aefdcc2: Components # Components
+    2d4ada78-0e85-4064-94ce-b2bae82aa18d: Icon # Icon
+    2d58a77a-5f3a-4a5a-bb66-9716f5433ca8: Builder # Builder
+    3a20b368-94ec-4d50-8821-e726cfdc8b18: Alignment # Alignment
+    5a5d1398-dd06-4d75-9923-3719b271707e: Content # Content
+    5ecba418-92d9-4cfb-b1b0-a9ac089220a4: CTA # CTA
+    9ad4d2c3-6d12-432c-b188-38fc3d4e8793: Review # Review
+    18cd9f79-10c9-4cc9-bf0c-fe1fffd42b23: 'Page Header' # Page Header
+    21dded19-689c-4174-970e-cb2aeca312d6: Button # Button
+    64f82816-9c12-49e0-9e11-5cd9d3bfbaa1: Heading # Heading
+    67bd469c-4ff7-44fe-9852-1a15a891f976: Card # Card
+    97f20e91-e7a7-4cf8-8687-620fc3718308: Icon # Icon
+    127e8796-4008-4be8-83cc-e786ea69f619: Buttons # Buttons
+    219b06d2-002c-43af-9f32-eded97c0efd1: Default # Default
+    461aab87-7e59-4339-93ac-3f5905df801f: Slider # Slider
+    558e47cd-6550-45f3-ba3f-db92c941f557: 'Display Type' # Display Type
+    851b6c75-bce9-405d-8487-58afc559c838: Headers # Headers
+    3376bd1e-aac9-440e-90c4-07724ae7b4b3: 'Finding Flow Solutions' # Finding Flow Solutions
+    4969a3f3-fa47-4402-a0a8-35e34304b566: Entries # Entries
+    5190fe78-2768-4f43-9d82-2c1689063874: Topic # Topic
+    41240ab8-b7b3-4600-b69c-995bccdedfe0: Icons # Icons
+    56054df5-3842-4172-b475-b60b9a6f1ee9: FAQ # FAQ
+    89433a62-b1d3-4515-b51c-a2b9be66570a: Label # Label
+    151384ef-d890-48a6-afc0-ec0b64beb573: 'Finding Flow Solutions' # Finding Flow Solutions
+    471282d0-767a-4047-bcc4-504ae5f0e334: Cards # Cards
+    61448138-f095-4eff-946c-4d97afc6e826: Materials # Materials
+    a1c61c3c-f4e1-42f5-9932-fb5edec976e0: Reviews # Reviews
+    a57d1749-be1d-4514-b9e1-444858fdc375: Subheading # Subheading
+    a143216d-3c28-4e29-aa1d-394623951191: Tabs # Tabs
+    af7e71b0-2fe9-4f59-a1ae-952d50f1294b: Link # Link
+    b7ed00de-59e8-46ee-a2a5-dec21d8042be: Resources # Resources
+    b9c72c2c-3f0c-4da5-bb87-6f5217376e53: Image # Image
+    b9cae8c2-183e-482d-b1d2-9bb60fb47ef5: Pages # Pages
+    c6e47093-5583-4acc-b6e6-9acfda9c212b: Common # Common
+    c380a37d-0236-4354-912a-d56a70dc007e: Uploads # Uploads
+    cc09acf3-fb79-4431-9e19-9e28aa74dd46: Waves # Waves
+    d03bbeb7-2400-44ac-b20c-f9a21e4f4d32: Entries # Entries
+    dbec29af-e99d-4c82-9e1f-4e7728d254c6: Default # Default
+    de1e2409-6942-48af-b94b-7b007ad6d101: Images # Images
+    e5b4d38e-5e27-4681-959d-f373fef5d473: Landing # Landing
+    e7c7d2c3-02f6-4061-9ef9-8a20ad61738e: Tab # Tab
+    ec4b840b-76d7-46ab-b7cb-e016b3a74195: Default # Default
+    f15ae7b0-2400-42af-9e2c-aaea02d636c0: Default # Default
+plugins:
+  mix:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+    settings:
+      assetPath: dist
+      publicPath: web
+  neo:
+    edition: standard
+    enabled: true
+    licenseKey: UQJB78SUCER6CL3XDYHCNWW8
+    schemaVersion: 3.6.2
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+system:
+  edition: solo
+  live: true
+  name: 'Finding Flow Solutions'
+  schemaVersion: 4.4.0.4
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

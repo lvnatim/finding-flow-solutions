@@ -1,0 +1,15 @@
+defaultPlacement: end
+enableVersioning: true
+handle: pages
+name: Pages
+propagationMethod: all
+siteSettings:
+  151384ef-d890-48a6-afc0-ec0b64beb573: # Finding Flow Solutions
+    enabledByDefault: true
+    hasUrls: true
+    template: _builder.twig
+    uriFormat: '{slug}'
+structure:
+  maxLevels: null
+  uid: 340f015c-87da-47e3-bf9c-1e0024ab9a7e
+type: structure

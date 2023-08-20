@@ -1,0 +1,76 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: 2d58a77a-5f3a-4a5a-bb66-9716f5433ca8 # Builder
+fieldLayouts:
+  6d6df716-bc87-4753-8d76-d825e37567bb:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 64f82816-9c12-49e0-9e11-5cd9d3bfbaa1 # Heading
+            instructions: null
+            label: Quote
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 89ae34cc-cf6d-41a5-add1-8bd71ea8660e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a57d1749-be1d-4514-b9e1-444858fdc375 # Subheading
+            instructions: null
+            label: Attribution
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: dfdeb113-f46a-4ef8-9be7-f5440a62a414
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b9c72c2c-3f0c-4da5-bb87-6f5217376e53 # Image
+            instructions: null
+            label: 'Background Image'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3685b0a7-3b16-460b-9be5-feaf41a6f955
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 97f20e91-e7a7-4cf8-8687-620fc3718308 # Icon
+            instructions: null
+            label: 'Foreground Image'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: afcbff7a-e0a3-48d9-b234-927954481044
+            userCondition: null
+            warning: null
+            width: 100
+        name: Default
+        uid: 1ed746bb-3e59-49f9-b6ca-2da396f4805a
+        userCondition: null
+group: 0e1b3603-b225-4550-ae51-552c4aefdcc2 # Components
+groupChildBlockTypes: true
+handle: cta
+icon: null
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: CTA
+sortOrder: 9
+topLevel: true

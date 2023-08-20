@@ -1,0 +1,41 @@
+childBlocks:
+  - Review
+conditions: null
+description: ''
+enabled: true
+field: 2d58a77a-5f3a-4a5a-bb66-9716f5433ca8 # Builder
+fieldLayouts:
+  ae119834-e484-4dce-9359-781d3f7c8fe9:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 64f82816-9c12-49e0-9e11-5cd9d3bfbaa1 # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 09dc1063-94c4-46a2-90b5-0217f5253d5e
+            userCondition: null
+            warning: null
+            width: 100
+        name: Default
+        uid: b3424016-3f4e-415d-ab44-e813ae39fe91
+        userCondition: null
+group: 0e1b3603-b225-4550-ae51-552c4aefdcc2 # Components
+groupChildBlockTypes: true
+handle: reviews
+icon: null
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: Reviews
+sortOrder: 14
+topLevel: true

@@ -1,0 +1,130 @@
+body {
+  color: $black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+}
+
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6,
+// p {
+//   &:not(:last-child) {
+//     margin-bottom: 16px;
+//   }
+// }
+
+h1,
+.h1 {
+  font-size: 36px;
+  line-height: 1.5;
+  margin-bottom: 48px;
+}
+
+h2,
+.h2 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 42px;
+  margin-bottom: 24px;
+}
+
+h3,
+.h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  margin-bottom: 16px;
+}
+
+h4,
+.h4 {
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+h5,
+.h5 {
+  font-size: 18px;
+  line-height: 30px;
+
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
+ul,
+ol {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+  font-family: 'Lato', sans-serif;
+  list-style: revert;
+  margin-bottom: 36px;
+  padding-left: 18px;
+}
+
+nav,
+nav > ul {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+footer nav > ul {
+  font-weight: 500;
+}
+
+// h5,
+// .h5 {
+//   font-size: 24px;
+//   line-height: 1.25;
+// }
+
+// h6,
+// .h6 {
+//   font-family: 'Satoshi', sans-serif;
+//   font-size: 16px;
+//   line-height: 20px;
+//   font-weight: 700;
+// }
+
+// .lead {
+//   font-size: 24px;
+//   line-height: 36px;
+//   font-weight: 700;
+// }
+
+p,
+.p {
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.lead,
+.lead > p {
+  @extend .h4;
+}

@@ -1,0 +1,64 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: 2d58a77a-5f3a-4a5a-bb66-9716f5433ca8 # Builder
+fieldLayouts:
+  1eef36b8-f748-4ae6-947b-b6ae60b7b7c5:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 64f82816-9c12-49e0-9e11-5cd9d3bfbaa1 # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fc98d7dc-25f8-443e-ae3b-47ee7589f069
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5a5d1398-dd06-4d75-9923-3719b271707e # Content
+            instructions: null
+            label: Quote
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 965096e4-df35-43cf-98d8-0d271cd0b14e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a57d1749-be1d-4514-b9e1-444858fdc375 # Subheading
+            instructions: null
+            label: Attribution
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fc0e71ee-8bd5-4b9a-b874-14d73508396a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Default
+        uid: dacd82f1-5041-42e2-a2de-2422245e8aeb
+        userCondition: null
+group: 0e1b3603-b225-4550-ae51-552c4aefdcc2 # Components
+groupChildBlockTypes: true
+handle: Review
+icon: null
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: Review
+sortOrder: 15
+topLevel: false

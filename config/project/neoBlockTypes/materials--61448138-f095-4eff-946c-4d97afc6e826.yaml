@@ -1,0 +1,77 @@
+childBlocks:
+  - icon
+conditions: null
+description: ''
+enabled: true
+field: 2d58a77a-5f3a-4a5a-bb66-9716f5433ca8 # Builder
+fieldLayouts:
+  b9bc4c6a-d335-47e4-b696-f1b125a1f24a:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 64f82816-9c12-49e0-9e11-5cd9d3bfbaa1 # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2215a1f2-2b62-48ba-941d-8c6285f44be3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: b9c72c2c-3f0c-4da5-bb87-6f5217376e53 # Image
+            instructions: null
+            label: 'Preview Image'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 59d9384a-be51-4fd0-b64a-43adf1531154
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: af7e71b0-2fe9-4f59-a1ae-952d50f1294b # Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b08a8ba1-bcbc-4d13-8ff8-63c85befa186
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 89433a62-b1d3-4515-b51c-a2b9be66570a # Label
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 71a7bccf-113a-441c-be0a-6d4b603b9628
+            userCondition: null
+            warning: null
+            width: 50
+        name: Default
+        uid: ca7b6b0c-d705-436c-a0b9-5eeadd1e9ae3
+        userCondition: null
+group: 0e1b3603-b225-4550-ae51-552c4aefdcc2 # Components
+groupChildBlockTypes: true
+handle: materials
+icon: null
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: Materials
+sortOrder: 13
+topLevel: true

@@ -1,0 +1,41 @@
+childBlocks:
+  - button
+conditions: null
+description: ''
+enabled: true
+field: 2d58a77a-5f3a-4a5a-bb66-9716f5433ca8 # Builder
+fieldLayouts:
+  b5e61e72-5f38-45cc-a2ca-a86a53cf0947:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 64f82816-9c12-49e0-9e11-5cd9d3bfbaa1 # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 41a6dc85-d79f-47b8-8069-496626626f8a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Default
+        uid: fa98ea48-54cd-4bdf-8325-04f23b29c467
+        userCondition: null
+group: 0e1b3603-b225-4550-ae51-552c4aefdcc2 # Components
+groupChildBlockTypes: true
+handle: buttons
+icon: null
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: Buttons
+sortOrder: 5
+topLevel: true

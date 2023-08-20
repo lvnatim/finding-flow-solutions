@@ -1,0 +1,118 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: 2d58a77a-5f3a-4a5a-bb66-9716f5433ca8 # Builder
+fieldLayouts:
+  06f58e75-da37-4c21-a347-566cd0eee427:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 64f82816-9c12-49e0-9e11-5cd9d3bfbaa1 # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 491f639a-0a47-483d-af8f-28ab90aa0799
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 89433a62-b1d3-4515-b51c-a2b9be66570a # Label
+            instructions: null
+            label: 'Button Label'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c0604943-bea1-4653-a393-19238f5f2b2d
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: af7e71b0-2fe9-4f59-a1ae-952d50f1294b # Link
+            instructions: null
+            label: 'Button Link'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f179e376-2bd0-493f-9d7e-01c2652d1b92
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: b9c72c2c-3f0c-4da5-bb87-6f5217376e53 # Image
+            instructions: null
+            label: 'Full Width Image'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a439173b-2519-48c1-b1a5-c92e8e72f34c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Default
+        uid: 40fc1d45-856b-4dc1-9b3b-1b3108e4e01d
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 97f20e91-e7a7-4cf8-8687-620fc3718308 # Icon
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1d0c8904-c7f0-4c2c-a38e-669be8c3c27b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5a5d1398-dd06-4d75-9923-3719b271707e # Content
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1396165d-0dd8-48f4-a902-45dd0b4bfbbc
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a57d1749-be1d-4514-b9e1-444858fdc375 # Subheading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a2fdbea1-3746-4531-aaed-e130c3937422
+            userCondition: null
+            warning: null
+            width: 100
+        name: Aside
+        uid: e3431bab-dbe4-48dd-b27e-d51a17cf7568
+        userCondition: null
+group: 851b6c75-bce9-405d-8487-58afc559c838 # Headers
+groupChildBlockTypes: true
+handle: landing
+icon: null
+ignorePermissions: true
+maxBlocks: 1
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: Landing
+sortOrder: 3
+topLevel: true

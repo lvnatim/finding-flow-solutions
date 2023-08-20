@@ -1,0 +1,77 @@
+childBlocks:
+  - icon
+conditions: null
+description: ''
+enabled: true
+field: 2d58a77a-5f3a-4a5a-bb66-9716f5433ca8 # Builder
+fieldLayouts:
+  743ff3db-df74-4f00-bae9-3987a145e565:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 64f82816-9c12-49e0-9e11-5cd9d3bfbaa1 # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8403017e-43d7-45af-91ef-b693cbb0e2e2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5a5d1398-dd06-4d75-9923-3719b271707e # Content
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3328d110-7103-44ea-ade7-70419bea9c96
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: af7e71b0-2fe9-4f59-a1ae-952d50f1294b # Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 367b4a79-da9f-4d93-9999-23aac33b8fcc
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 89433a62-b1d3-4515-b51c-a2b9be66570a # Label
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c7a4520a-58f2-43cf-9915-3dad8aa9dcd2
+            userCondition: null
+            warning: null
+            width: 50
+        name: Default
+        uid: 4c3b591c-a9ca-4a88-ab05-5a503cc2cf00
+        userCondition: null
+group: 0e1b3603-b225-4550-ae51-552c4aefdcc2 # Components
+groupChildBlockTypes: true
+handle: icons
+icon: null
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: Icons
+sortOrder: 11
+topLevel: true

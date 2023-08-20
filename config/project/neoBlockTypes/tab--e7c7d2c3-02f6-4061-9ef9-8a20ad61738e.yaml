@@ -1,0 +1,88 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: 2d58a77a-5f3a-4a5a-bb66-9716f5433ca8 # Builder
+fieldLayouts:
+  df4839a6-b641-401d-ac37-027e5662cc42:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 64f82816-9c12-49e0-9e11-5cd9d3bfbaa1 # Heading
+            instructions: null
+            label: 'Tab Label'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d715c319-1779-430c-912c-060909c4dc4b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: a57d1749-be1d-4514-b9e1-444858fdc375 # Subheading
+            instructions: null
+            label: Heading
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0e6ac468-d368-4b64-8f5e-fa66009946bf
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5a5d1398-dd06-4d75-9923-3719b271707e # Content
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3ec55265-3241-4697-b48f-094b21a05065
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 89433a62-b1d3-4515-b51c-a2b9be66570a # Label
+            instructions: null
+            label: 'Button Label'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6eecaae6-3d9d-4303-8d9c-aa6a23e768d8
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: af7e71b0-2fe9-4f59-a1ae-952d50f1294b # Link
+            instructions: null
+            label: 'Button Link'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6f77e0ce-e2f5-41c9-8b03-8f44e3410626
+            userCondition: null
+            warning: null
+            width: 50
+        name: Default
+        uid: fd997ab1-d0e1-4198-87c8-365d26c05b15
+        userCondition: null
+group: 0e1b3603-b225-4550-ae51-552c4aefdcc2 # Components
+groupChildBlockTypes: true
+handle: tab
+icon: null
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: Tab
+sortOrder: 17
+topLevel: false

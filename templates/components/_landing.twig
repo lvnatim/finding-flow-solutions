@@ -1,0 +1,40 @@
+<section>
+    <div class="container">
+        <div class="flex">
+            <div class="w-5/12 py-32">
+                {% if matrixBlock.heading %}<h1>{{ matrixBlock.heading }}</h1>{% endif %}
+                {% if matrixBlock.href %}<a class="btn" href="{{ matrixBlock.href }}"><span>{{ matrixBlock.label ? matrixBlock.label : 'Learn More' }}</span></a>{% endif %}
+            </div>
+            <div class="w-2/12"></div>
+            <div class="w-4/12">
+                <div class="relative">
+                    <img class="-my-12" src="{{siteUrl}}dist/img/waves.svg" alt="Decorative wave design"/>
+                    {% if matrixBlock.icon|length %}
+                        {% set icon = matrixBlock.icon.one() %}
+                        <img class="absolute w-56 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" src="{{ icon.url }}" alt="{{ icon.alt }}"/>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+    {% set image = matrixBlock.image|length ? matrixBlock.image.one() : false %}
+    <div class="bg-cover relative {{ image == false ? 'bg-grey' }}" style="{{ image ? 'background-image:url('~ image.url ~')' }}">
+        <div class="container">
+            <div class="flex">
+                <div class="w-7/12"></div>
+                <div class="w-4/12 -mt-40 pb-40">
+                    <div class="border-blend -mx-16">
+                        <div>
+                            <div class="py-8 px-12">
+                                {{ matrixBlock.mainContent }}
+                            </div>
+                            <div class="bg-grey py-8 px-12">
+                                <p class="h3 mb-0">{{ matrixBlock.subheading }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

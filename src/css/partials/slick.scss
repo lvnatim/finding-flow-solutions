@@ -1,0 +1,65 @@
+.dots {
+  .slick-dots {
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: static;
+    gap: 24px;
+
+    li {
+      display: block;
+      margin: 0;
+      height: auto;
+      width: 48px;
+      padding: 0;
+      transition: 0.3s;
+  
+      > button {
+        height: auto;
+        width: 100%;
+        padding: 0;
+        transition: 0.3s;
+    
+        &::before {
+          // background: $black !important;
+          background-image: url(../../img/flow-solutions-blend.jpg);
+          border-radius: 10px;
+          content: "";
+          display: block;
+          height: 8px;
+          width: 100%;
+          opacity: 0.3 !important;
+          padding: 0;
+          position: static;
+          transition: 0.3s;
+        }
+      }
+
+      &.slick-active,
+      &:hover {
+        width: 96px;
+
+        > button::before {
+          opacity: 1 !important;
+        }
+      }
+
+      &:nth-of-type(2) > button::before {
+        background-position-x: 20%;
+      }
+
+      &:nth-of-type(3) > button::before {
+        background-position-x: 40%;
+      }
+
+      &:nth-of-type(4) > button::before {
+        background-position-x: 60%;
+      }
+
+      &:nth-of-type(5) > button::before {
+        background-position-x: 80%;
+      }
+    }
+  }
+}

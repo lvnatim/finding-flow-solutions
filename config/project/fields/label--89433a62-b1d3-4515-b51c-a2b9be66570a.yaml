@@ -1,0 +1,19 @@
+columnSuffix: edaiftfj
+contentColumnType: text
+fieldGroup: c6e47093-5583-4acc-b6e6-9acfda9c212b # Common
+handle: label
+instructions: null
+name: Label
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

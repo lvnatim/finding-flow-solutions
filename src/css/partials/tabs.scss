@@ -1,0 +1,18 @@
+[role="tab"] {
+  @extend .h4;
+  
+  border-radius: 15px;
+  padding: 8px 48px;
+  width: 100%;
+
+  &.active,
+  &:hover,
+  &:focus {
+    background: $grey;
+  }
+}
+
+[role="tablist"] {
+  border: 3px solid $grey;
+  padding: 3px;
+}

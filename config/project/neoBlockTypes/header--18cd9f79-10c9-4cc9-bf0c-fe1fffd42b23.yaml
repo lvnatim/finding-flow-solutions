@@ -1,0 +1,52 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: 2d58a77a-5f3a-4a5a-bb66-9716f5433ca8 # Builder
+fieldLayouts:
+  922800f2-73b6-4a82-aa56-609cae707a15:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 64f82816-9c12-49e0-9e11-5cd9d3bfbaa1 # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 06c1b009-0b6a-4c5e-b01e-141a03a2d7b6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5a5d1398-dd06-4d75-9923-3719b271707e # Content
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: eaa6bd20-edcc-42e2-9f3b-3941f76c7990
+            userCondition: null
+            warning: null
+            width: 100
+        name: Default
+        uid: c02f68ba-8d64-486c-a02a-df0b484fa36b
+        userCondition: null
+group: 851b6c75-bce9-405d-8487-58afc559c838 # Headers
+groupChildBlockTypes: true
+handle: header
+icon: null
+ignorePermissions: true
+maxBlocks: 1
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: 'Page Header'
+sortOrder: 2
+topLevel: true

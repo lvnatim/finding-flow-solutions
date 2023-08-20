@@ -1,0 +1,13 @@
+#map {
+  background: $blue;
+  height: 100px;
+  width: 200px;
+  transition: 0.5s;
+
+  &.active,
+  &.full-size {
+    background: white;
+    height: 720px;
+    width: 100%;
+  }
+}

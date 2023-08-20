@@ -1,0 +1,19 @@
+<section>
+    <div class="container my-24">
+        {% if matrixBlock.heading %}<h2 class="text-center">{{ matrixBlock.heading }}</h2>{% endif %}
+        <div class="w-5/6 mx-auto">
+            {% for review in matrixBlock.getDescendants(1) %}
+                <div class="bg-white border border-grey box-shadow p-12 rounded-[30px] mb-8">
+                    <div class="flex items-center justify-between mb-8">
+                        <h3 class="mb-0">{{ review.heading }}</h3>
+                        <img src="{{siteUrl}}dist/img/stars.svg" alt="icon of five stars"/>
+                    </div>
+                    {{ review.mainContent }}
+                    {% if review.subheading %}
+                    <p><b>— {{ review.subheading }}</b></p>
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

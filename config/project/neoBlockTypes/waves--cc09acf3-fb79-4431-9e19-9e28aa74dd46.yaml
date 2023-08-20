@@ -1,0 +1,43 @@
+childBlocks:
+  - buttons
+  - cards
+  - cta
+  - icons
+  - reviews
+  - tabs
+  - text
+conditions: null
+description: ''
+enabled: true
+field: 2d58a77a-5f3a-4a5a-bb66-9716f5433ca8 # Builder
+fieldLayouts:
+  6079c537-1cbe-4cf2-9e78-a62e830b02c0:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dismissible: false
+            elementCondition: null
+            style: tip
+            tip: 'Anything wrapped in this section will have a grey wave background.'
+            type: craft\fieldlayoutelements\Tip
+            uid: bb7f829c-ff6a-49f7-b5e9-4a8df10c088c
+            userCondition: null
+        name: Default
+        uid: 5194ae9b-7c11-4cb9-ac3f-2704dae4c493
+        userCondition: null
+group: 0e1b3603-b225-4550-ae51-552c4aefdcc2 # Components
+groupChildBlockTypes: true
+handle: waves
+icon: null
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: Waves
+sortOrder: 19
+topLevel: true

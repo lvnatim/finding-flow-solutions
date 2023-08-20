@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <title>Finding Flow Solutions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="referrer" content="origin-when-cross-origin" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+    <link href="{{ mix('css/main.css') }}" rel="stylesheet">
+</head>
+<body class="ltr">
+    <header class="box-shadow bg-white relative z-50">
+        <div class="px-16 py-6 flex items-center justify-between">
+            <a class="h4" href="{{ siteUrl }}">Finding Flow Solutions</a>
+            <nav>
+                <ul class="list-none mb-0 pl-0 flex items-center gap-x-12">
+                    <li><a href="/explore">Explore the Curriculum</a></li>
+                    <li>Resource Type</li>
+                    <li>Grade</li>
+                    <li>Topic</li>
+                    <li>Purchasing</li>
+                    <li>FAQs</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    {% block content %}
+    {% endblock %}
+    <footer class="bg-black mt-40 py-16 text-white" style="border-top: 16px solid black;">
+        <div class="container">
+            <div class="flex">
+                <div class="w-1/4">
+                    <h4>Finding Flow Solutions</h4>
+                </div>
+                <div class="w-3/4">
+                    <div class="grid grid-cols-5">
+                        <div>
+                            <h5>Explore the Curriculum</h5>
+                            <h5>FAQs</h5>
+                        </div>
+                        <div>
+                            <h5>Resource</h5>
+                            <nav>
+                                <ul class="list-none pl-0">
+                                    <li class="mb-4">Unit Plans</li>
+                                    <li class="mb-4">Games</li>
+                                    <li class="mb-4">Centers/Stations</li>
+                                    <li class="mb-4">Bellringers</li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div>
+                            <h5>Grade</h5>
+                            <nav>
+                                <ul class="list-none pl-0">
+                                    <li class="mb-4">Grades K-2</li>
+                                    <li class="mb-4">Grades 3-5</li>
+                                    <li class="mb-4">Grades 6-8</li>
+                                    <li class="mb-4">Grades 9-12</li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div>
+                            <h5>Topic</h5>
+                            <nav>
+                                <ul class="list-none pl-0">
+                                    <li class="mb-4">Flow Theory</li>
+                                    <li class="mb-4">Time Management</li>
+                                    <li class="mb-4">Energy Management</li>
+                                    <li class="mb-4">Focus &amp; Attention</li>
+                                    <li class="mb-4">Work Habits</li>
+                                    <li class="mb-4">Self-Directed Learning</li>
+                                    <li class="mb-4">Collaboration</li>
+                                    <li class="mb-4">Mindset</li>
+                                    <li class="mb-4">Creativity</li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div>
+                            <h5>Purchasing</h5>
+                            <nav>
+                                <ul class="list-none pl-0">
+                                    <li class="mb-4">For Teachers</li>
+                                    <li class="mb-4">For Parents</li>
+                                    <li class="mb-4">For School Leaders</li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="{{ mix('js/main.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "browser-sync": "^2.28.1",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "laravel-mix": "^6.0.49",
+    "postcss": "^8.4.21",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.58.3",
+    "sass-loader": "^12.6.0",
+    "tailwindcss": "^3.2.7",
+    "video.js": "^8.0.4"
+  },
+  "scripts": {
+    "watch": "npx mix watch -- --watch-options-poll=1000"
+  },
+  "dependencies": {
+    "jquery": "^3.6.3"
+  }
+}

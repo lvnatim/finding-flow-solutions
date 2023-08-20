@@ -1,0 +1,34 @@
+columnSuffix: vljlxlzh
+contentColumnType: string
+fieldGroup: c6e47093-5583-4acc-b6e6-9acfda9c212b # Common
+handle: alignment
+instructions: null
+name: Alignment
+searchable: false
+settings:
+  options:
+    -
+      __assoc__:
+        -
+          - label
+          - Centered
+        -
+          - value
+          - centered
+        -
+          - default
+          - '1'
+    -
+      __assoc__:
+        -
+          - label
+          - Left
+        -
+          - value
+          - left
+        -
+          - default
+          - ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Dropdown

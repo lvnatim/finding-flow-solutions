@@ -1,0 +1,41 @@
+{% extends '_builder' %}
+
+{% block content %}
+<section>
+    <header class="relative pt-36">
+        <div class="absolute top-12 left-16">
+            <nav class="breadcrumbs">
+                <ul>
+                    <li>Home</li>
+                    <li>FAQs</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="px-12">
+                <h1 class="h3 mb-0">Frequently Asked Questions</h1>
+            </div>
+        </div>
+    </header>
+</section>
+
+{% set faqs = craft.entries.section('faq').all() %}
+{% if faqs|length %}
+    <section>
+        <div class="container my-16">
+            <div id="accordionGroup" class="accordion">
+                {% for faq in faqs %}
+                    <div class="box-shadow mb-6 rounded-[30px]">
+                        <h4>
+                            <button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="section-{{ faq.id }}" id="accordion-{{ faq.id }}"><span class="accordion-title">{{ faq.title }}<span class="accordion-icon"></span></span></button>
+                        </h4>
+                        <div id="section-{{ faq.id }}" role="region" aria-labelledby="accordion-{{ faq.id }}" class="accordion-panel" hidden>
+                            {{faq.mainContent}}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,12 @@
+.border-blend {
+  background-image: url(../../img/flow-solutions-blend.jpg);
+  background-size: cover;
+  border-radius: 30px;
+  padding: 16px;
+
+  > div {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden; 
+  }
+}
