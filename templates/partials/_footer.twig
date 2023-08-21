@@ -1,0 +1,26 @@
+<footer class="bg-black border-top-blend mt-40 py-16 text-white">
+        <div class="container">
+            <div class="flex">
+                <div class="w-1/4">
+                    <h4>{{ siteName }}</h4>
+                </div>
+                <div class="w-3/4">
+                    <nav aria-label="Footer Navigation" class="grid grid-cols-5 gap-x-6">
+                        <ul class="list-none pl-0 mb-0">
+                        {% for item in navigation.navigation.level(1).type('navigationItem').all() %}
+                            <li class="h5"><a href="{{ item.entry|length ? item.entry.one().url : item.href }}">{{ item.label ? item.label : (item.entry|length ? item.entry.one().title) }}</a></li>
+                        {% endfor %}
+                        </ul>
+                        {% for item in navigation.navigation.level(1).type('navigationList').all() %}
+                            <ul class="list-none pl-0">
+                                <li class="h5">{{ item.label }}</li>
+                                {% for childItem in item.getDescendants(1) %}
+                                    <li class="mb-4"><a href="{{ childItem.entry|length ? childItem.entry.one().url : childItem.href }}">{{ childItem.label ? childItem.label : (childItem.entry|length ? childItem.entry.one().title) }}</a></li>
+                                {% endfor %}
+                            </ul>
+                        {% endfor %}
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>

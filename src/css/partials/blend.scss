@@ -10,3 +10,18 @@
     overflow: hidden; 
   }
 }
+
+.border-top-blend {
+  position: relative;
+
+  &::before {
+    background-image: url(../../img/flow-solutions-blend.jpg);
+    content: "";
+    display: block;
+    height: 16px;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+  }
+}

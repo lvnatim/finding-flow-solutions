@@ -1,16 +1,3 @@
-// .accordion-trigger {
-//   i {
-//     transition: 0.3s;
-//     transform: rotateZ(0deg);
-//   }
-  
-//   &[aria-expanded="true"] {
-//     i {
-//       transform: rotateZ(45deg);
-//     }
-//   }
-// }
-
 .btn {
   display: inline-block;
   position: relative;
@@ -60,38 +47,3 @@
     }
   }
 }
-
-// .btn-cyan {
-//   background: $cyan;
-//   color: $black;
-// }
-
-// .btn-white {
-//   background: white;
-//   color: #005264;
-// }
-
-// .filter {
-//   background: white;
-//   border: 1px solid transparent;
-//   border-color: #90A4AE;
-//   border-top-left-radius: 12px;
-//   border-top-right-radius: 12px;
-//   border-bottom-left-radius: 0;
-//   border-bottom-right-radius: 0;
-//   color: #90A4AE;
-//   padding-left: 20px;
-
-//   &[aria-selected="true"],
-//   &:hover,
-//   &:focus,
-//   &.active {
-//     background-color: #263238;
-//     border-color: #263238;
-//     color: white;
-//   }
-
-//   &.active {
-//     pointer-events: none;
-//   }
-// }

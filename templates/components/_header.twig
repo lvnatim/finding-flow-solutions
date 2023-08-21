@@ -1,19 +1,28 @@
+{% set heading = heading is defined ? heading : false %}
+{% set content = content is defined ? content : false %}
+{% set nobg    = nobg is defined ? nobg : false %}
+
+{% if matrixBlock is defined %}
+    {% set heading = matrixBlock.heading %}
+    {% set content = matrixBlock.mainContent %}
+{% endif %}
+
 <section>
-    <header class="relative pt-36 {{ entry.section.handle != 'pages' ? 'bg-grey' }}">
+    <header class="relative pt-36 {{ entry.section.handle != 'pages' ? ( nobg ? '' : 'bg-grey' ) }}">
         <div class="absolute top-12 left-16">
             <nav class="breadcrumbs">
                 <ul>
-                    <li><a href="{{ siteUrl }}">Home</a></li>
+                    <li><a href="{{ siteUrl }}">{{'Home'|t}}</a></li>
                     <li>{{ entry.title }}</li>
                 </ul>
             </nav>
         </div>
         <div class="container">
             <div class="px-12">
-                {% if matrixBlock.heading %}<h1 class="h3 mb-12">{{ matrixBlock.heading }}</h1>{% endif %}
-                {% if matrixBlock.mainContent %}
+                {% if heading %}<h1 class="h3 mb-12">{{ heading }}</h1>{% endif %}
+                {% if content %}
                 <div class="bg-white border border-grey box-shadow p-8 rounded-[30px] {{ entry.section.handle != 'pages' ? '-mb-12 relative z-20' }}">
-                    {{ matrixBlock.mainContent }}
+                    {{ content }}
                 </div>
                 {% endif %}
             </div>

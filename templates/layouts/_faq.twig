@@ -1,24 +1,7 @@
-{% extends '_builder' %}
+{% extends 'layouts/_builder' %}
 
 {% block content %}
-<section>
-    <header class="relative pt-36">
-        <div class="absolute top-12 left-16">
-            <nav class="breadcrumbs">
-                <ul>
-                    <li>Home</li>
-                    <li>FAQs</li>
-                </ul>
-            </nav>
-        </div>
-        <div class="container">
-            <div class="px-12">
-                <h1 class="h3 mb-0">Frequently Asked Questions</h1>
-            </div>
-        </div>
-    </header>
-</section>
-
+{% include 'components/_header' with {heading: entry.title, nobg: true} %}
 {% set faqs = craft.entries.section('faq').all() %}
 {% if faqs|length %}
     <section>

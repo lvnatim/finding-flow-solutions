@@ -1,0 +1,64 @@
+childBlocks: null
+conditions: null
+description: ''
+enabled: true
+field: 4790034a-9974-43d3-b42d-f91993136fec # Navigation
+fieldLayouts:
+  6d4d930e-ea76-4249-9186-45ed5602df57:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: eee487bd-360f-4f0c-9090-638d9d06ca8f # Entry
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6ce86b1d-7e4b-4db4-bad9-37395d00958c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 89433a62-b1d3-4515-b51c-a2b9be66570a # Label
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1d4ac645-c815-4d6e-bfe8-e265462a0a6f
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: af7e71b0-2fe9-4f59-a1ae-952d50f1294b # Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3ec117fa-c4bc-4b8f-a869-40405aaad2ae
+            userCondition: null
+            warning: null
+            width: 50
+        name: Default
+        uid: 33d43410-2398-4876-b399-ea134f3cdfc3
+        userCondition: null
+group: null
+groupChildBlockTypes: true
+handle: navigationItem
+icon: null
+ignorePermissions: true
+maxBlocks: 0
+maxChildBlocks: 0
+maxSiblingBlocks: 0
+minBlocks: 0
+minChildBlocks: 0
+minSiblingBlocks: 0
+name: 'Navigation Item'
+sortOrder: 1
+topLevel: true

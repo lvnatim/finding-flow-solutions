@@ -7,7 +7,7 @@ siteSettings:
   151384ef-d890-48a6-afc0-ec0b64beb573: # Finding Flow Solutions
     enabledByDefault: true
     hasUrls: true
-    template: _builder.twig
+    template: layouts/_builder.twig
     uriFormat: 'resource/{slug}'
 structure:
   maxLevels: null

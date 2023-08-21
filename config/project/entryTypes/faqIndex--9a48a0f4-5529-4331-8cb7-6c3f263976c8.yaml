@@ -1,0 +1,43 @@
+fieldLayouts:
+  115a8659-b6eb-4ed4-9f5e-a77cb1c5ad5e:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 1788120b-f7d6-4bd1-bb74-5834248e37f3
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: e98b238d-3ecd-42be-a47f-16455cd6ef2f
+        userCondition: null
+handle: faqIndex
+hasTitleField: true
+name: 'FAQ Index'
+section: a3369fa2-1d90-410c-914b-4ae22a04ace8 # FAQ Index
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
