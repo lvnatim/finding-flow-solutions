@@ -5,9 +5,11 @@
         {% for entry in matrixBlock.entries.all() %}
             {% set icon = entry.icon ? entry.icon.one() : (entry.image ? entry.image.one()) %}
             {% if matrixBlock.displayType == 'card' %}
-                <a href="{{ entry.url }}" class="border-[4px] border-black rounded-[30px] p-3">
+                <a href="{{ entry.url }}" class="material border-[4px] border-black rounded-[30px] p-3">
                     {% if icon %}
-                        <img src="{{ icon.url }}" alt="{{ icon.alt }}"/>
+                        <div class="overflow-hidden rounded-[20px]">
+                            <img src="{{ icon.url }}" alt="{{ icon.alt }}"/>
+                        </div>
                     {% endif %}
                     <h4 class="pt-2 pb-4 text-center">{{ entry.title }}</h4>
                 </a>

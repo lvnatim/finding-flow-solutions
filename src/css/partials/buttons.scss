@@ -5,7 +5,6 @@
 
   > span {
     background: white;
-    border: 3px solid $black;
     border-radius: 12px;
     display: block;
     font-family: 'Poppins', sans-serif;
@@ -14,36 +13,144 @@
     line-height: 30px;
     padding: 12px 64px;
     position: relative;
+    transition: 0.3s;
     z-index: 2;
+
+    &::before,
+    &::after {
+      border: 3px solid $black;
+      border-radius: 12px;
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      transition: 0.3s;
+    }
+
+    &::before {
+      background: white;
+      z-index: -1;
+    }
+
+    &::after {
+      background-image: url(../../img/flow-solutions-blend.jpg);
+      border-top: 3px solid transparent;
+      border-right: 3px solid transparent;
+      z-index: -2;
+    }
+  }
+
+  &::before,
+  &::after {
+    border-top: 3px solid #363E48;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    content: "";
+    display: block;
+    width: 12px;
+    position: absolute;
+    transform: rotateZ(-45deg) scaleX(0);
+    transform-origin: top left;
+    transition: 0.3s;
+    z-index: 3;
+  }
+
+  &::before {
+    top: 5.5px;
+    left: 2px;
   }
 
   &::after {
-    background-image: url(../../img/flow-solutions-blend.jpg);
-    border: 3px solid $black;
-    border-radius: 12px;
-    content: "";
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    transition: 0.3s;
+    bottom: 1.5px;
+    right: -5.5px;
   }
 
   &:hover,
   &:focus,
   &.large {
-    transform: translate(16px, -16px);
+    > span {
+      transform: translate(8px, -8px);
 
-    &::after {
-      transform: translate(-16px, 16px);
+      &::after {
+        transform: translate(-8px, 8px);
+      }
+    }
+
+    &::after,
+    &::before {
+      transform: rotateZ(-45deg) scaleX(1);
     }
   }
 
+  &[data-index="1"] > span::after {
+    background-position: 160px 0;
+  }
+
+  &[data-index="2"] > span::after {
+    background-position: 320px 0;
+  }
+
+  &[data-index="3"] > span::after {
+    background-position: 480px 0;
+  }
+
+  &[data-index="4"] > span::after {
+    background-position: 640px 0;
+  }
+
+  &[data-index="5"] > span::after {
+    background-position: 800px 0;
+  }
+
+  &[data-index="6"] > span::after {
+    background-position: 160px 160px;
+  }
+
+  &[data-index="7"] > span::after {
+    background-position: 320px 160px;
+  }
+
+  &[data-index="8"] > span::after {
+    background-position: 480px 160px;
+  }
+
+  &[data-index="9"] > span::after {
+    background-position: 640px 160px;
+  }
+
   &.large {
+    &::before,
+    &::after {
+      border-width: 4px;
+      width: 16px;
+    }
+
+    &::before {
+      top: 7px;
+      left: 5px;
+    }
+
+    &::after {
+      bottom: 4;
+      right: -6.5px;
+    }
+
     > span {
       padding: 64px 48px;
+      transform: translate(12px, -12px);
+
+      &::after {
+        transform: translate(-12px, 12px);
+      }
+
+      &::before,
+      &::after {
+        border-radius: 20px;
+        border-width: 4px;
+      }
     }
   }
 }

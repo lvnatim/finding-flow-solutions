@@ -1,6 +1,7 @@
 window.$ = window.jQuery = require('jquery');
 
 import "./partials/accordion.js";
+import "./partials/blend.js";
 import "./partials/navigation.js";
 import "./partials/tabs.js";
 import $ from "jquery";

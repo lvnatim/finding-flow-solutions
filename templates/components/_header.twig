@@ -1,10 +1,15 @@
 {% set heading = heading is defined ? heading : false %}
 {% set content = content is defined ? content : false %}
 {% set nobg    = nobg is defined ? nobg : false %}
+{% set icon    = icon is defined ? icon : false %}
 
 {% if matrixBlock is defined %}
     {% set heading = matrixBlock.heading %}
     {% set content = matrixBlock.mainContent %}
+{% endif %}
+
+{% if entry is defined %}
+    {% set icon = entry.icon|length ? entry.icon.one() %}
 {% endif %}
 
 <section>
@@ -19,7 +24,10 @@
         </div>
         <div class="container">
             <div class="px-12">
-                {% if heading %}<h1 class="h3 mb-12">{{ heading }}</h1>{% endif %}
+                <div class="flex items-center justify-between mb-12">
+                    {% if heading %}<h1 class="h3 mb-0">{{ heading }}</h1>{% endif %}
+                    {% if icon %}<div class="flex items-center justify-center" style="height:90px;width:140px;"><img src="{{ icon.url }}" alt="{{ icon.alt }}"/></div>{% endif %}
+                </div>
                 {% if content %}
                 <div class="bg-white border border-grey box-shadow p-8 rounded-[30px] {{ entry.section.handle != 'pages' ? '-mb-12 relative z-20' }}">
                     {{ content }}

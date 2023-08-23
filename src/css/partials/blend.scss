@@ -1,6 +1,7 @@
 .border-blend {
   background-image: url(../../img/flow-solutions-blend.jpg);
   background-size: cover;
+  background-position: 0 0;
   border-radius: 30px;
   padding: 16px;
 
@@ -8,6 +9,42 @@
     background: white;
     border-radius: 20px;
     overflow: hidden; 
+  }
+
+  &[data-index="1"] {
+    background-position: 600px 600px;
+  }
+
+  &[data-index="2"] {
+    background-position: 1200px 0;
+  }
+  
+  &[data-index="3"] {
+    background-position: 0 300px;
+  }
+
+  &[data-index="4"] {
+    background-position: 600px 300px;
+  }
+
+  &[data-index="5"] {
+    background-position: 1200px 300px;
+  }
+
+  &[data-index="6"] {
+    background-position: 0 600px;
+  }
+
+  &[data-index="7"] {
+    background-position: 600px 600px;
+  }
+
+  &[data-index="8"] {
+    background-position: 1200px 600px;
+  }
+
+  &[data-index="9"] {
+    background-position: 0 900px;
   }
 }
 
