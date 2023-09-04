@@ -13,7 +13,7 @@
 {% endif %}
 
 <section>
-    <header class="relative pt-36 {{ entry.section.handle != 'pages' ? ( nobg ? '' : 'bg-grey' ) }}">
+    <header class="relative pt-36 {{ entry.section.handle != 'pages' ? ( nobg ? '' : 'bg-grey bg-overflow' ) }}">
         <div class="absolute top-12 left-16">
             <nav class="breadcrumbs">
                 <ul>
@@ -23,7 +23,7 @@
             </nav>
         </div>
         <div class="container">
-            <div class="px-12">
+            <div>
                 <div class="flex items-center justify-between mb-12">
                     {% if heading %}<h1 class="h3 mb-0">{{ heading }}</h1>{% endif %}
                     {% if icon %}<div class="flex items-center justify-center" style="height:90px;width:140px;"><img src="{{ icon.url }}" alt="{{ icon.alt }}"/></div>{% endif %}

@@ -4,7 +4,7 @@ description: ''
 enabled: true
 field: 2d58a77a-5f3a-4a5a-bb66-9716f5433ca8 # Builder
 fieldLayouts:
-  3e57590d-3cc7-4698-9b88-e14f34d1cd8c:
+  74042682-90ba-4b40-a2ab-bc54c7f94683:
     tabs:
       -
         elementCondition: null
@@ -84,5 +84,5 @@ minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
 name: Card
-sortOrder: 8
+sortOrder: 9
 topLevel: false

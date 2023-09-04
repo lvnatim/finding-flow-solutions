@@ -1,0 +1,341 @@
+field: 746551af-25b1-44fe-9664-5b486f338e8f # Resources
+fieldLayouts:
+  92c65fa0-ba46-4014-a68c-6d56bb2f6885:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: a971148a-a590-48a2-bacd-9a5de4224b16 # Related Topic
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f956ad3b-4693-4ae9-9d38-86e15fe698c8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d7939c2b-b9cf-4d42-be6c-1df91c06dae4 # Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9531ca0f-7166-43fa-8547-041a59fcc364
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5e5e3e86-7133-4441-952c-76a83f00a2a1 # Eyebrow
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6b668111-a4e9-4140-874c-94891311b2e5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 52ed107e-b597-4e81-9309-19c28ca5dc3a # Heading
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9b439982-b33b-46f9-b22d-1cccacf53b63
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f2b926d8-ea3b-4f93-9ef2-caa4de0454b0 # Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 68bf92f1-75a8-493e-936f-1e2b578e831c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 97d52108-304d-410c-961b-464525d60e19 # Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 41dd4055-b178-415d-8fc1-c6f45b90bdf2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 900588c8-03a0-400d-9c78-fa38f2abcc1e # Grades
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 743650e5-2077-4407-84a0-dd4ae894547c
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: 8e82e5c8-3852-4136-a616-8defa3a34446 # Subjects
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 38329b40-0f47-4151-bd39-60d029fce6ad
+            userCondition: null
+            warning: null
+            width: 25
+          -
+            elementCondition: null
+            fieldUid: bedae585-3f56-45d2-8276-5c8f1349acc5 # Topics
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1a4540dd-5733-4acf-a69a-2ee5812f9d4a
+            userCondition: null
+            warning: null
+            width: 50
+        name: Content
+        uid: b38848ba-0d96-46bb-ae92-370e4233bf6c
+        userCondition: null
+fields:
+  5e5e3e86-7133-4441-952c-76a83f00a2a1: # Eyebrow
+    columnSuffix: vazoirew
+    contentColumnType: text
+    fieldGroup: null
+    handle: eyebrow
+    instructions: null
+    name: Eyebrow
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  8e82e5c8-3852-4136-a616-8defa3a34446: # Subjects
+    columnSuffix: ccjulkhd
+    contentColumnType: text
+    fieldGroup: null
+    handle: subjects
+    instructions: null
+    name: Subjects
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  52ed107e-b597-4e81-9309-19c28ca5dc3a: # Heading
+    columnSuffix: shfkmnqp
+    contentColumnType: text
+    fieldGroup: null
+    handle: heading
+    instructions: null
+    name: Heading
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  97d52108-304d-410c-961b-464525d60e19: # Link
+    columnSuffix: ictyxveu
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: href
+    instructions: null
+    name: Link
+    searchable: false
+    settings:
+      maxLength: 255
+      types:
+        - url
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+  900588c8-03a0-400d-9c78-fa38f2abcc1e: # Grades
+    columnSuffix: fqusiiyz
+    contentColumnType: text
+    fieldGroup: null
+    handle: grades
+    instructions: null
+    name: Grades
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  a971148a-a590-48a2-bacd-9a5de4224b16: # Related Topic
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: relatedTopic
+    instructions: null
+    name: 'Related Topic'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      branchLimit: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: null
+      minRelations: 1
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Entry
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\entries\EntryCondition
+      selectionLabel: null
+      showSiteMenu: true
+      sources:
+        - 'section:5190fe78-2768-4f43-9d82-2c1689063874' # Topic
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  bedae585-3f56-45d2-8276-5c8f1349acc5: # Topics
+    columnSuffix: hnltlxvs
+    contentColumnType: text
+    fieldGroup: null
+    handle: topics
+    instructions: null
+    name: Topics
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  d7939c2b-b9cf-4d42-be6c-1df91c06dae4: # Image
+    columnSuffix: damjlztd
+    contentColumnType: string
+    fieldGroup: null
+    handle: image
+    instructions: null
+    name: Image
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds: null
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:c380a37d-0236-4354-912a-d56a70dc007e' # Uploads
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: 1
+      previewMode: full
+      restrictFiles: false
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:c380a37d-0236-4354-912a-d56a70dc007e' # Uploads
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  f2b926d8-ea3b-4f93-9ef2-caa4de0454b0: # Description
+    columnSuffix: iltudxhg
+    contentColumnType: text
+    fieldGroup: null
+    handle: description
+    instructions: null
+    name: Description
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: true
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: resource
+name: Resource
+sortOrder: 1

@@ -5,7 +5,7 @@ description: ''
 enabled: true
 field: 2d58a77a-5f3a-4a5a-bb66-9716f5433ca8 # Builder
 fieldLayouts:
-  ae119834-e484-4dce-9359-781d3f7c8fe9:
+  767ada95-6795-4695-bb38-f8425d5b82a0:
     tabs:
       -
         elementCondition: null
@@ -37,5 +37,5 @@ minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
 name: Reviews
-sortOrder: 14
+sortOrder: 19
 topLevel: true

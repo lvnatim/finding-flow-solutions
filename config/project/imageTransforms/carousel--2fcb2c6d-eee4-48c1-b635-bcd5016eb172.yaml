@@ -1,0 +1,11 @@
+fill: null
+format: null
+handle: carousel
+height: 560
+interlace: none
+mode: crop
+name: Carousel
+position: center-center
+quality: 100
+upscale: true
+width: 960

@@ -16,17 +16,22 @@ module.exports = {
       center: true,
       padding: '20px',
       screens: {
-        // sm: '600px',
-        // md: '728px',
-        // lg: '984px',
+        sm: '425px',
+        md: '768px',
+        lg: '1024px',
         xl: '1240px',
-        // '2xl': '1440px',
+        '2xl': '1240px',
       },
     },
-    extend: {},
-    screens: {
-      'xl': '1240px'
-    },
+    extend: {
+      screens: {
+          sm: '425px',
+          md: '768px',
+          lg: '1024px',
+          xl: '1240px',
+          '2xl': '1350px',
+      }
+    }
   },
   plugins: [],
   important: true,

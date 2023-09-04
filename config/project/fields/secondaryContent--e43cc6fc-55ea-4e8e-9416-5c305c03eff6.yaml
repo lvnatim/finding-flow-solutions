@@ -1,0 +1,27 @@
+columnSuffix: csjzezkt
+contentColumnType: text
+fieldGroup: c6e47093-5583-4acc-b6e6-9acfda9c212b # Common
+handle: secondaryContent
+instructions: null
+name: 'Content (Secondary)'
+searchable: false
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: null
+  purifyHtml: true
+  redactorConfig: null
+  removeEmptyTags: false
+  removeInlineStyles: false
+  removeNbsp: false
+  showHtmlButtonForNonAdmins: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

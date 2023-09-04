@@ -2,8 +2,8 @@
 {% css 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css' %}
 {% js 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js' at endBody %}
 
-<section class="bg-white relative pt-12">
-    <div class="container mt-24">
+<section class="bg-white relative">
+    <div class="container my-24">
         <div class="bg-white border border-grey box-shadow flex flex-nowrap p-12 rounded-[30px]">
             <div class="w-4/12">
                 {{ matrixBlock.mainContent }}
@@ -13,7 +13,7 @@
                 {% if matrixBlock.images|length %}
                     <div class="slider mb-6">
                         {% for slide in matrixBlock.images.all() %}
-                            <div><img src="{{ slide.url }}" alt="{{ slide.alt }}"/></div>
+                            <div class="rounded-[15px] overflow-hidden"><img src="{{ slide.getUrl('carousel') }}" alt="{{ slide.alt }}"/></div>
                         {% endfor %}
                     </div>
                     <div class="dots"></div>

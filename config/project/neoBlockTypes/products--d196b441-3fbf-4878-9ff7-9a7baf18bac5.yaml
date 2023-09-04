@@ -1,15 +1,27 @@
 childBlocks:
-  - icon
+  - product
 conditions: null
 description: ''
 enabled: true
 field: 2d58a77a-5f3a-4a5a-bb66-9716f5433ca8 # Builder
 fieldLayouts:
-  f7118bb6-de73-486a-98da-c3a264051eb0:
+  e929a2ef-e49f-4032-8ea7-9a4d8f9cc631:
     tabs:
       -
         elementCondition: null
         elements:
+          -
+            elementCondition: null
+            fieldUid: 3a20b368-94ec-4d50-8821-e726cfdc8b18 # Alignment
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2194d5a0-2b82-435f-9990-5cd09dc01327
+            userCondition: null
+            warning: null
+            width: 100
           -
             elementCondition: null
             fieldUid: 64f82816-9c12-49e0-9e11-5cd9d3bfbaa1 # Heading
@@ -18,34 +30,10 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 2215a1f2-2b62-48ba-941d-8c6285f44be3
+            uid: 19d2a1ca-072b-4ea1-9a91-7bbd6e017807
             userCondition: null
             warning: null
             width: 100
-          -
-            elementCondition: null
-            fieldUid: b9c72c2c-3f0c-4da5-bb87-6f5217376e53 # Image
-            instructions: null
-            label: 'Preview Image'
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 59d9384a-be51-4fd0-b64a-43adf1531154
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: af7e71b0-2fe9-4f59-a1ae-952d50f1294b # Link
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: b08a8ba1-bcbc-4d13-8ff8-63c85befa186
-            userCondition: null
-            warning: null
-            width: 50
           -
             elementCondition: null
             fieldUid: 89433a62-b1d3-4515-b51c-a2b9be66570a # Label
@@ -54,16 +42,28 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 71a7bccf-113a-441c-be0a-6d4b603b9628
+            uid: b96406af-44a0-46d8-a234-a2fff12f36cf
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: af7e71b0-2fe9-4f59-a1ae-952d50f1294b # Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a23887c9-41d3-474c-91c8-8ec560f4e409
             userCondition: null
             warning: null
             width: 50
         name: Default
-        uid: ca7b6b0c-d705-436c-a0b9-5eeadd1e9ae3
+        uid: 88d7aa50-fcc1-4ce6-a25d-c1880bbc1c16
         userCondition: null
 group: 0e1b3603-b225-4550-ae51-552c4aefdcc2 # Components
 groupChildBlockTypes: true
-handle: materials
+handle: products
 icon: null
 ignorePermissions: true
 maxBlocks: 0
@@ -72,6 +72,6 @@ maxSiblingBlocks: 0
 minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
-name: Materials
-sortOrder: 15
+name: Products
+sortOrder: 16
 topLevel: true

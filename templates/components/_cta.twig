@@ -1,8 +1,8 @@
 <section>
     <div class="container my-24">
         <div class="border-blend">
-            <div class="flex overflow-visible">
-                <div class="w-1/2 py-12">
+            <div class="border border-white border-4 flex overflow-visible justify-between">
+                <div class="w-5/12 py-12">
                     <div class="w-3/4 mx-auto">
                         {% if matrixBlock.heading %}
                             <p class="h1 mb-3">{{ matrixBlock.heading }}</p>
@@ -13,7 +13,7 @@
                     </div>
                 </div>
                 {% set image = matrixBlock.image.one() %}
-                <div class="w-1/2 bg-center bg-cover relative rounded-tr-[30px] rounded-br-[30px]" style="background-image:url({{ image ? image.url }}">
+                <div class="w-1/2 bg-center bg-cover relative rounded-tr-[20px] rounded-br-[20px]" style="background-image:url({{ image ? image.url }}">
                     {% if matrixBlock.icon|length %}
                         {% set icon = matrixBlock.icon.one() %}
                         <img class="absolute -left-32 -bottom-24 w-5/6" src="{{ icon.url }}" alt="{{ icon.alt }}"/>

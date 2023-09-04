@@ -1,0 +1,19 @@
+<section>
+    <div class="container my-24">
+        {% if matrixBlock.heading %}<h2 class="{{ matrixBlock.alignment == 'centered' ? 'text-center' }}">{{ matrixBlock.heading }}</h2>{% endif %}
+        <div class="grid grid-cols-3 gap-x-10">
+            {% for product in matrixBlock.getDescendants(1) %}
+                {% set icon = product.icon ? product.icon.one() %}
+                <a href="{{ product.href }}" class="material border-[4px] border-black rounded-[30px] p-3" target="_blank">
+                    {% if icon %}
+                        <div class="overflow-hidden rounded-[20px]">
+                            <img src="{{ icon.getUrl('square') }}" alt="{{ icon.alt }}"/>
+                        </div>
+                    {% endif %}
+                    <h4 class="pt-2 pb-4 text-center">{{ product.heading }}</h4>
+                </a>
+            {% endfor %}
+        </div>
+        {% if matrixBlock.href %}<div class="{{ matrixBlock.alignment == 'centered' ? 'text-center' }} mt-8"><a class="btn" href="{{ matrixBlock.href }}"><span>{{ matrixBlock.label ? matrixBlock.label : 'Learn More' }}</span></a></div>{% endif %}
+    </div>
+</section>

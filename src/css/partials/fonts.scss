@@ -36,7 +36,7 @@ h2,
 h3,
 .h3 {
   font-size: 24px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 36px;
   margin-bottom: 16px;
 }
@@ -65,7 +65,7 @@ ol {
   line-height: 32px;
   font-family: 'Lato', sans-serif;
   list-style: revert;
-  margin-bottom: 36px;
+  margin-bottom: 24px;
   padding-left: 18px;
 }
 
@@ -95,4 +95,15 @@ p,
 .lead,
 .lead > p {
   @extend .h4;
+}
+
+.tag {
+  color: #363E48;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.6px;
+  opacity: 0.5;
+  text-transform: uppercase;
 }

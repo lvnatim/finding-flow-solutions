@@ -1,15 +1,15 @@
 defaultPlacement: end
 enableVersioning: true
-handle: faq
-name: FAQ
+handle: grades
+name: Grades
 propagationMethod: all
 siteSettings:
   151384ef-d890-48a6-afc0-ec0b64beb573: # Finding Flow Solutions
     enabledByDefault: true
-    hasUrls: false
-    template: null
-    uriFormat: null
+    hasUrls: true
+    template: layouts/_builder.twig
+    uriFormat: 'grades/{slug}'
 structure:
   maxLevels: null
-  uid: d3404183-5e88-47a3-9ea7-c2d5766b427a
+  uid: 69e39ae3-3fe1-4516-89b0-d17a9e2401bb
 type: structure

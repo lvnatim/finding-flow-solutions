@@ -1,0 +1,14 @@
+columnSuffix: knayobcl
+contentColumnType: boolean
+fieldGroup: c6e47093-5583-4acc-b6e6-9acfda9c212b # Common
+handle: toggle
+instructions: null
+name: Toggle
+searchable: false
+settings:
+  default: false
+  offLabel: null
+  onLabel: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

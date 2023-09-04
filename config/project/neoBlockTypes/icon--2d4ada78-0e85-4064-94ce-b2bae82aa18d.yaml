@@ -4,7 +4,7 @@ description: ''
 enabled: true
 field: 2d58a77a-5f3a-4a5a-bb66-9716f5433ca8 # Builder
 fieldLayouts:
-  9e4ca2be-a78e-4b2f-921a-b30f6a6abc0a:
+  0a7ff5ae-bc76-4f0d-bf1b-2bb5cd14b338:
     tabs:
       -
         elementCondition: null
@@ -48,5 +48,5 @@ minBlocks: 0
 minChildBlocks: 0
 minSiblingBlocks: 0
 name: Icon
-sortOrder: 12
+sortOrder: 14
 topLevel: false
