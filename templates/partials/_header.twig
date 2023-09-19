@@ -1,9 +1,12 @@
 <header id="navigation" class="box-shadow sticky relative top-0 z-50">
     <div class="px-5 xl:px-16 py-6 flex items-center justify-between">
         <a class="h4" href="{{ siteUrl }}">Finding Flow Solutions</a>
+        <button id="toggle" class="lg:hidden" aria-expanded="false" aria-controls="menu">
+            <span>Menu</span>
+        </button>
         {% if navigation.navigation|length %}
-            <nav aria-label="Header Navigation" class="hidden xl:block">
-                <ul class="list-none mb-0 pl-0 flex items-center gap-x-12">
+            <nav id="menu" aria-label="Header Navigation" class="fixed lg:relative top-[75px] lg:top-0 left-0 right-0 bottom-0 bg-white lg:bg-transparent p-5 lg:p-0">
+                <ul class="list-none mb-0 pl-0 lg:flex items-center gap-x-8 xl:gap-x-12">
                     {% for item in navigation.navigation.level(1).all() %}
                         {% if item.type == 'navigationItem' %}
                             <li><a href="{{ item.entry|length ? item.entry.one().url : item.href }}">{{ item.label ? item.label : (item.entry|length ? item.entry.one().title) }}</a></li>

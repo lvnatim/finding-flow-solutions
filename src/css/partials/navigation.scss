@@ -1,19 +1,41 @@
+#menu {
+  transform: translateX(100%);
+  transition: 0.3s;
+  
+  &.is-active {
+    transform: translateX(0);
+  }
+
+  @media(min-width: 1024px) {
+    transform: translateX(0) !important;
+  }
+}
+
 nav > ul {
   li {
     font-family: 'Lato', sans-serif;
-    font-size: 16px;
+    font-size: 15px;
+    margin-bottom: 8px;
     position: relative;
+
+    @media(min-width: 1024px) {
+      margin-bottom: 0;
+    }
   
     ul {
-      background: #363E48;
-      color: white;
       display: none;
       list-style: none;
       margin: 0;
-      padding: 16px 0 0;
-      position: absolute;
+      padding: 8px 0 0;
       top: 100%;
       white-space: nowrap;
+
+      @media(min-width: 1024px) {
+        background: #363E48;
+        color: white;
+        padding: 16px 0 0;
+        position: absolute;
+      }
     }
   
     &.open {
@@ -50,11 +72,13 @@ nav > ul {
   background: white;
 
   &.active {
-    background: $black;
-    color: white;
+    @media(min-width: 1024px) {
+      background: $black;
+      color: white;
 
-    .has-submenu > a::after {
-      background-image: url(../../img/chevron-down.svg);
+      .has-submenu > a::after {
+        background-image: url(../../img/chevron-down.svg);
+      }
     }
   }
 
