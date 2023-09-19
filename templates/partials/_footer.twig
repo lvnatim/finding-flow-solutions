@@ -5,7 +5,7 @@
                     <h4>{{ siteName }}</h4>
                 </div>
                 <div class="w-full md:w-3/4 mt-8 md:mt-0">
-                    <nav aria-label="Footer Navigation" class="grid md:grid-cols-5 gap-x-6">
+                    <nav aria-label="Footer Navigation" class="grid md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-6">
                         <ul class="list-none pl-0 mb-8 md:mb-0">
                         {% for item in navigation.navigation.level(1).type('navigationItem').all() %}
                             <li class="h5"><a href="{{ item.entry|length ? item.entry.one().url : item.href }}">{{ item.label ? item.label : (item.entry|length ? item.entry.one().title) }}</a></li>
