@@ -72,7 +72,7 @@ fields:
             - class
             - craft\elements\conditions\entries\EntryCondition
       selectionLabel: null
-      showSiteMenu: false
+      showSiteMenu: true
       sources:
         - 'section:aaf07435-c887-4c52-adec-c8e396f45121' # Grades
       targetSiteId: null
@@ -108,7 +108,7 @@ fields:
             - class
             - craft\elements\conditions\entries\EntryCondition
       selectionLabel: null
-      showSiteMenu: false
+      showSiteMenu: true
       sources:
         - 'section:5190fe78-2768-4f43-9d82-2c1689063874' # Topic
       targetSiteId: null

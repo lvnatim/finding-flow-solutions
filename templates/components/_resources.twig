@@ -5,11 +5,11 @@
 {% endif %}
 
 <section class="bg-white relative">
-    <div class="container my-24">
-        {% if matrixBlock.heading %}<h3 class="mb-16 text-center">{{ matrixBlock.heading }}</h3>{% endif %}
+    <div class="container my-12 md:my-16 lg:my-20 xl:my-24">
+        {% if matrixBlock.heading %}<h3 class="mb-8 xl:mb-16 text-center">{{ matrixBlock.heading }}</h3>{% endif %}
         {% if not matrixBlock.toggle %}
-        <div class="border border-grey box-shadow flex items-center justify-between mx-auto px-9 py-4 rounded-[8px] w-3/4" style="background:#FAFBFF">
-            <p class="mb-0">{{ topic ? topic.title ~ ': ' ~ topic.heading : 'Showing All' }}</p>
+        <div class="border border-grey box-shadow flex items-center justify-between mx-auto px-5 md:px-9 py-4 rounded-[8px] w-full md:w-3/4" style="background:#FAFBFF">
+            <p class="mb-0 pr-5">{{ topic ? topic.title ~ ': ' ~ topic.heading : 'Showing All' }}</p>
             <form>
                 <select name="topic" onchange="this.form.submit()">
                     <option value="">Select a Topic</option>
@@ -22,29 +22,29 @@
         {% endif %}
         {% set resources = topic ? matrixBlock.resources.relatedTo(topic).all() : matrixBlock.resources.all() %}
         {% for item in resources %}
-            <div class="border border-black border-4 my-16 overflow-hidden rounded-[30px]">
+            <div class="border border-black border-4 my-12 md:my-16 overflow-hidden rounded-[30px]">
                 {% if item.type == 'overview' %}
                     {% set unit = item.relatedTopic.one() %}
-                    <div class="flex flex-wrap justify-between px-9 py-12">
-                        <div class="w-7/12">
+                    <div class="flex flex-wrap justify-between px-5 md:px-9 py-6 md:py-12">
+                        <div class="w-full md:w-8/12 lg:w-7/12">
                             <h3>{{ unit.title }}: {{ unit.heading }}</h3>
                             <p class="lead mb-0">The points covered in this unit include:</p>
                             <p>{{ item.description }}</p>
                         </div>
-                        <div class="w-1/4">
+                        <div class="w-full md:w-1/4 mt-6 md:mt-0">
                             <div class="text-right"><a class="btn" href="{{ unit.url }}"><span>{{ 'Explore'|t }}</span></a></div>
                             {% set icon = unit.icon.one() %}
-                            {% if icon %}<div class="flex items-center justify-center ml-auto mt-10" style="height:90px;width:200px;"><img src="{{ icon.url }}" alt="{{ icon.alt }}"/></div>{% endif %}
+                            {% if icon %}<div class="flex items-center justify-center mx-auto md:ml-auto mt-10" style="height:90px;width:200px;"><img src="{{ icon.url }}" alt="{{ icon.alt }}"/></div>{% endif %}
                         </div>
                         {% if item.grades|length %}
                         <div class="w-full mt-12">
-                            <div class="flex">
-                                <div class="w-1/4">
-                                    <p class="lead mb-0">Explore Materials For</p>
+                            <div class="flex flex-wrap">
+                                <div class="w-full lg:w-1/4 mb-2 lg:mb-0">
+                                    <p class="lead">Explore Materials For</p>
                                 </div>
-                                <div class="w-3/4 grid grid-cols-4">
+                                <div class="w-full lg:w-3/4 grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                                     {% for grade in item.grades.all() %}
-                                        <a href="{{ grade.url }}?topic={{ unit.id }}"><p class="lead mb-0">{{ grade.title }}</p></a>
+                                        <a class="underline hover:no-underline" href="{{ grade.url }}?topic={{ unit.id }}"><p class="lead mb-0">{{ grade.title }}</p></a>
                                     {% endfor %}
                                 </div>
                             </div>
@@ -53,10 +53,10 @@
                     </div>
                     {% set materials = unit.builder.type('materials').one() %}
                     {% if materials %}
-                        <div class="bg-grey flex px-9 py-6 gap-8">
+                        <div class="bg-grey flex flex-wrap md:flex-nowrap px-5 md:px-9 py-6 gap-8">
                             {% for iconBlock in materials.getDescendants(1) %}
                                 {% set icon = iconBlock.icon.one() %}
-                                <div class="w-1/3 flex">
+                                <div class="w-full md:w-1/3 flex">
                                     {% if icon %}<img class="h-12 w-12 mr-4 shrink-0" src="{{ icon.url }}" alt="{{ icon.alt }}"/>{% endif %}
                                     <div class="small">
                                         {{ iconBlock.mainContent }}
@@ -66,14 +66,14 @@
                         </div>
                     {% endif %}
                 {% else %}
-                    <div class="flex justify-between px-9 py-12">
-                        <div class="w-7/12">
-                            <p class="mb-4 tag">{{ item.relatedTopic.one().heading ? item.relatedTopic.one().heading : item.relatedTopic.one().title  }}</p>
+                    <div class="flex flex-wrap md:flex-nowrap justify-between px-5 md:px-9 py-6 md:py-12">
+                        <div class="w-full md:w-7/12">
+                            <p class="mb-2 md:mb-4 tag">{{ item.relatedTopic.one().heading ? item.relatedTopic.one().heading : item.relatedTopic.one().title  }}</p>
                             <h3>{{ item.heading }}</h3>
                             <p>{{ item.description }}</p>
                             {% if item.href %}<a class="btn" href="{{ item.href }}"><span>{{ 'Learn More'|t }}</span></a>{% endif %}
                         </div>
-                        <div class="w-1/4 mt-2">
+                        <div class="w-full md:w-1/4 mt-6 md:mt-2">
                             {% set image = item.image ? item.image.one() %}
                             {% if image %}
                                 <div class="overflow-hidden rounded-[20px]">
@@ -82,16 +82,16 @@
                             {% endif %}
                         </div>
                     </div>
-                    <div class="bg-grey flex px-9 py-6">
-                        <div class="w-1/6">
+                    <div class="bg-grey flex flex-wrap px-5 md:px-9 py-6">
+                        <div class="w-full md:w-1/6 mb-4 md:mb-0">
                             <p class="mb-0 opacity-100 tag">{{ "Grades"|t }}</p>
                             <p>{{ item.grades }}</p>
                         </div>
-                        <div class="w-5/12">
+                        <div class="w-full md:w-5/12 mb-4 md:mb-0">
                             <p class="mb-0 opacity-100 tag">{{ "Subjects"|t }}</p>
                             <p>{{ item.subjects }}</p>
                         </div>
-                        <div class="w-5/12">
+                        <div class="w-full md:w-5/12">
                             <p class="mb-0 opacity-100 tag">{{ "Subjects"|t }}</p>
                             <p>{{ item.topics }}</p>
                         </div>

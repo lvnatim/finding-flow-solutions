@@ -1,14 +1,13 @@
 <section>
     <div class="container">
-        <div class="flex">
-            <div class="w-5/12 py-32">
+        <div class="flex flex-wrap justify-between">
+            <div class="w-full md:w-6/12 lg:w-5/12 pt-16 lg:pt-32 pb-8 md:pb-16 lg:pb-32">
                 {% if matrixBlock.heading %}<h1>{{ matrixBlock.heading }}</h1>{% endif %}
                 {% if matrixBlock.href %}<a class="btn" href="{{ matrixBlock.href }}"><span>{{ matrixBlock.label ? matrixBlock.label : 'Learn More' }}</span></a>{% endif %}
             </div>
-            <div class="w-2/12"></div>
-            <div class="w-4/12">
+            <div class="w-full md:w-6/12 xl:px-12">
                 <div class="relative">
-                    <img class="-my-12" src="{{siteUrl}}dist/img/waves.png" alt="Decorative wave design"/>
+                    <img class="lg:-my-8 xl:-my-12" src="{{siteUrl}}dist/img/waves.png" alt="Decorative wave design"/>
                     {% if matrixBlock.icon|length %}
                         {% set icon = matrixBlock.icon.one() %}
                         <img class="absolute w-56 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" src="{{ icon.url }}" alt="{{ icon.alt }}"/>
@@ -18,17 +17,17 @@
         </div>
     </div>
     {% set image = matrixBlock.image|length ? matrixBlock.image.one() : false %}
-    <div class="bg-cover relative {{ image == false ? 'bg-grey' }}" style="{{ image ? 'background-image:url('~ image.url ~')' }}">
+    <div class="bg-cover bg-center relative {{ image == false ? 'bg-grey' }}" style="{{ image ? 'background-image:url('~ image.url ~')' }}">
         <div class="container">
-            <div class="flex">
-                <div class="w-7/12"></div>
-                <div class="w-4/12 -mt-40 pb-40">
-                    <div class="border-blend -mx-16">
+            <div class="flex flex-wrap">
+                <div class="w-full md:w-7/12"></div>
+                <div class="w-full md:w-4/12 md:-mt-20 lg:-mt-32 xl:-mt-48 py-8 md:pb-20 lg:pb-32 xl:pb-40">
+                    <div class="border-blend md:-mx-16">
                         <div>
-                            <div class="py-8 px-12">
+                            <div class="py-4 md:py-8 px-4 md:px-8 lg:px-12">
                                 {{ matrixBlock.mainContent }}
                             </div>
-                            <div class="bg-grey py-8 px-12">
+                            <div class="bg-grey py-4 md:py-8 px-4 md:px-8 lg:px-12">
                                 <p class="h3 mb-0">{{ matrixBlock.subheading }}</p>
                             </div>
                         </div>

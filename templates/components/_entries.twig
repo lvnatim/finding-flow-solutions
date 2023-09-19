@@ -1,5 +1,5 @@
 <section>
-    <div class="container my-24">
+    <div class="container my-12 md:my-16 lg:my-20 xl:my-24">
         {% if matrixBlock.heading %}<h2 class="text-center">{{ matrixBlock.heading }}</h2>{% endif %}
         {% if matrixBlock.displayType == 'card' %}<div class="grid grid-cols-3 gap-x-10">{% endif %}
         {% for entry in matrixBlock.entries.all() %}
@@ -14,12 +14,12 @@
                     <h4 class="pt-2 pb-4 text-center">{{ entry.title }}</h4>
                 </a>
             {% else %}
-                <div class="flex items-center mb-6">
+                <div class="md:flex items-center mb-6">
                     {% if icon %}
-                        <div class="flex items-center justify-center -mr-4 shrink-0 z-20" style="height:90px;width:140px;"><img src="{{ icon.url }}" alt="{{ icon.alt }}"/></div>
+                        <div class="flex items-center justify-center mx-auto -mb-4 md:mb-0 md:-mr-4 shrink-0 z-20 h-[90px] w-[140px]"><img src="{{ icon.url }}" alt="{{ icon.alt }}"/></div>
                     {% endif %}
-                    <div class="w-full bg-white border border-grey box-shadow py-8 px-12 rounded-[30px] flex items-center justify-between">
-                        <h3 class="mb-0"><strong>{{ entry.heading ? entry.heading : entry.title }}</strong></h3>
+                    <div class="w-full bg-white border border-grey box-shadow py-5 md:py-8 px-5 md:px-12 rounded-[30px] md:flex items-center justify-between">
+                        <h3 class="md:mb-0"><strong>{{ entry.heading ? entry.heading : entry.title }}</strong></h3>
                         <a class="btn" href="{{ entry.url }}"><span>{{ 'Learn More'|t }}</span></a>
                     </div>
                 </div>

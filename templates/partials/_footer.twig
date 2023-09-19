@@ -1,12 +1,12 @@
-<footer class="bg-black border-top-blend mt-40 py-16 text-white">
+<footer class="bg-black border-top-blend mt-12 md:mt-40 py-16 text-white">
         <div class="container">
-            <div class="flex">
-                <div class="w-1/4">
+            <div class="flex flex-wrap">
+                <div class="w-full md:w-1/4">
                     <h4>{{ siteName }}</h4>
                 </div>
-                <div class="w-3/4">
-                    <nav aria-label="Footer Navigation" class="grid grid-cols-5 gap-x-6">
-                        <ul class="list-none pl-0 mb-0">
+                <div class="w-full md:w-3/4 mt-8 md:mt-0">
+                    <nav aria-label="Footer Navigation" class="grid md:grid-cols-5 gap-x-6">
+                        <ul class="list-none pl-0 mb-8 md:mb-0">
                         {% for item in navigation.navigation.level(1).type('navigationItem').all() %}
                             <li class="h5"><a href="{{ item.entry|length ? item.entry.one().url : item.href }}">{{ item.label ? item.label : (item.entry|length ? item.entry.one().title) }}</a></li>
                         {% endfor %}

@@ -20,53 +20,86 @@ h6,
 
 h1,
 .h1 {
-  font-size: 36px;
-  line-height: 1.5;
-  margin-bottom: 48px;
+  font-size: 30px;
+  line-height: 1.4;
+  margin-bottom: 32px;
+
+  @media(min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.5;
+    margin-bottom: 48px;
+  }
 }
 
 h2,
 .h2 {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 500;
-  line-height: 42px;
-  margin-bottom: 24px;
+  line-height: 1.4;
+  margin-bottom: 18px;
+
+  @media(min-width: 1200px) {
+    font-size: 28px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+  }
 }
 
 h3,
 .h3 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
-  line-height: 36px;
+  line-height: 1.5;
   margin-bottom: 16px;
+
+  @media(min-width: 1200px) {
+    font-size: 24px;
+  }
 }
 
 h4,
 .h4 {
-  font-size: 20px;
-  line-height: 1.8;
+  font-size: 18px;
+  line-height: 1.5;
+
+  @media(min-width: 768px) {
+    font-size: 20px;
+    line-height: 1.6;
+  }
 }
 
 h5,
 .h5 {
   font-size: 18px;
-  line-height: 30px;
+  line-height: 1.45;
+
+  @media(min-width: 768px) {
+    line-height: 1.6;
+  }
 
   &:not(:last-child) {
-    margin-bottom: 24px;
+    margin-bottom: 16px;
+
+    @media(min-width: 768px) {
+      margin-bottom: 24px;
+    }
   }
 }
 
 ul,
 ol {
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 32px;
+  line-height: 1.6;
   font-family: 'Lato', sans-serif;
   list-style: revert;
   margin-bottom: 24px;
   padding-left: 18px;
+
+  @media(min-width: 768px) {
+    font-size: 18px;
+  }
 }
 
 nav,
@@ -83,12 +116,24 @@ footer nav > ul {
 p,
 .p {
   font-family: 'Lato', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 30px;
+  line-height: 1.5;
 
   &:not(:last-child) {
-    margin-bottom: 30px;
+    margin-bottom: 18px;
+
+    @media(min-width: 768px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media(min-width: 768px) {
+    font-size: 17px;
+  }
+
+  @media(min-width: 1200px) {
+    font-size: 18px;
   }
 }
 

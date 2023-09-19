@@ -1,8 +1,8 @@
 <header id="navigation" class="box-shadow sticky relative top-0 z-50">
-    <div class="px-16 py-6 flex items-center justify-between">
+    <div class="px-5 xl:px-16 py-6 flex items-center justify-between">
         <a class="h4" href="{{ siteUrl }}">Finding Flow Solutions</a>
         {% if navigation.navigation|length %}
-            <nav aria-label="Header Navigation">
+            <nav aria-label="Header Navigation" class="hidden xl:block">
                 <ul class="list-none mb-0 pl-0 flex items-center gap-x-12">
                     {% for item in navigation.navigation.level(1).all() %}
                         {% if item.type == 'navigationItem' %}

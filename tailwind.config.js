@@ -19,8 +19,8 @@ module.exports = {
         sm: '425px',
         md: '768px',
         lg: '1024px',
-        xl: '1240px',
-        '2xl': '1240px',
+        xl: '1200px',
+        // '2xl': '1240px',
       },
     },
     extend: {
@@ -28,8 +28,8 @@ module.exports = {
           sm: '425px',
           md: '768px',
           lg: '1024px',
-          xl: '1240px',
-          '2xl': '1350px',
+          xl: '1200px',
+          // '2xl': '1350px',
       }
     }
   },

@@ -1,13 +1,37 @@
 .accordion-panel {
-  padding: 32px 64px;
+  padding: 1.5rem 1.25rem;
   position: relative;
   z-index: 10;
+
+  @media(min-width: 768px) {
+    padding: 2rem;
+  }
+
+  @media(min-width: 1024px) {
+    padding: 2rem 3rem;
+  }
+
+  @media(min-width: 1200px) {
+    padding: 2rem 4rem;
+  }
 }
 
 .accordion-trigger {
-  padding: 32px 64px;
+  padding: 1.5rem 1.25rem;
   text-align: left;
   width: 100%;
+
+  @media(min-width: 768px) {
+    padding: 2rem;
+  }
+
+  @media(min-width: 1024px) {
+    padding: 2rem 3rem;
+  }
+
+  @media(min-width: 1200px) {
+    padding: 2rem 4rem;
+  }
 
   .accordion-title {
     display: flex;
@@ -17,6 +41,7 @@
 
   .accordion-icon {
     background-image: url(../../img/icon-plus-simple.png);
+    background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     display: inline-block;

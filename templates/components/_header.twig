@@ -13,8 +13,8 @@
 {% endif %}
 
 <section>
-    <header class="relative pt-36 {{ entry.section.handle != 'pages' ? ( nobg ? '' : 'bg-grey bg-overflow' ) }}">
-        <div class="absolute top-12 left-16">
+    <header class="relative pt-20 md:pt-28 lg:pt-36 {{ entry.section.handle != 'pages' ? ( nobg ? '' : 'bg-grey bg-overflow' ) }}">
+        <div class="absolute top-5 xl:top-12 left-5 xl:left-16">
             <nav class="breadcrumbs">
                 <ul>
                     <li><a href="{{ siteUrl }}">{{'Home'|t}}</a></li>
@@ -24,12 +24,12 @@
         </div>
         <div class="container">
             <div>
-                <div class="flex items-center justify-between mb-12">
+                <div class="flex items-center justify-between mb-8 md:mb-12">
                     {% if heading %}<h1 class="h3 mb-0">{{ heading }}</h1>{% endif %}
-                    {% if icon %}<div class="flex items-center justify-center" style="height:90px;width:140px;"><img src="{{ icon.url }}" alt="{{ icon.alt }}"/></div>{% endif %}
+                    {% if icon %}<div class="hidden md:flex items-center justify-center h-[90px] w-[140px]"><img src="{{ icon.url }}" alt="{{ icon.alt }}"/></div>{% endif %}
                 </div>
                 {% if content %}
-                <div class="bg-white border border-grey box-shadow p-8 rounded-[30px] {{ entry.section.handle != 'pages' ? '-mb-12 relative z-20' }}">
+                <div class="bg-white border border-grey box-shadow p-5 md:p-8 rounded-[30px] {{ entry.section.handle != 'pages' ? '-mb-12 relative z-20' }}">
                     {{ content }}
                 </div>
                 {% endif %}

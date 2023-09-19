@@ -1,26 +1,26 @@
 <section class="bg-white relative overflow-hidden">
-    <div class="container mt-24">
-        <div class="flex flex-nowrap">
-            <div class="w-5/12 shrink-0">
+    <div class="container mt-12 md:mt-16 lg:mt-20 xl:mt-24">
+        <div class="flex flex-wrap md:flex-nowrap items-center">
+            <div class="w-full md:w-6/12 lg:w-5/12 shrink-0">
                 {% if matrixBlock.heading %}<h2>{{ matrixBlock.heading }}</h2>{% endif %}
                 {% for iconBlock in matrixBlock.getDescendants(1) %}
                     {% set icon = iconBlock.icon.one() %}
                     <div class="flex items-center mb-6">
-                        {% if icon %}<img class="h-24 w-24 -mr-4 z-10 shrink-0" src="{{ icon.url }}" alt="{{ icon.alt }}"/>{% endif %}
-                        <div class="bg-white border border-grey box-shadow py-8 px-12 rounded-[30px] w-full">
+                        {% if icon %}<img class="h-16 lg:h-24 w-16 lg:w-24 -mr-4 z-10 shrink-0" src="{{ icon.url }}" alt="{{ icon.alt }}"/>{% endif %}
+                        <div class="bg-white border border-grey box-shadow py-5 xl:py-8 px-8 xl:px-12 rounded-[30px] w-full">
                             {{ iconBlock.mainContent }}
                         </div>
                     </div>
                 {% endfor %}
             </div>
-            <div class="w-1/12 shrink-0"></div>
-            <div class="w-8/12 shrink-0">
+            <div class="hidden lg:block w-1/12 shrink-0"></div>
+            <div class="w-full md:w-6/12 lg:w-7/12 xl:w-8/12 shrink-0">
                 {% set image = matrixBlock.image.one() %}
                 {% if image %}
-                    <img class="-mb-32" src="{{ image.url }}" alt="{{ image.alt }}"/>
+                    <img src="{{ image.url }}" alt="{{ image.alt }}"/>
                 {% endif %}
                 {% if matrixBlock.href %}
-                    <div class="w-3/4 text-center"><a class="btn" href="{{ matrixBlock.href }}"><span>{{ matrixBlock.label ? matrixBlock.label : 'See the Preview' }}</span></a></div>
+                    <div class="hidden md:block md:w-3/4 lg:-mt-16 mx-auto lg:ml-0 text-center"><a class="btn" href="{{ matrixBlock.href }}"><span>{{ matrixBlock.label ? matrixBlock.label : 'See the Preview' }}</span></a></div>
                 {% endif %}
             </div>
         </div>

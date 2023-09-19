@@ -1,9 +1,9 @@
 {% if matrixBlock.accordion|length %}
 <section>
-    <div class="container my-16">
+    <div class="container my-12 md:my-16">
         <div id="accordionGroup" class="accordion">
             {% for faq in matrixBlock.accordion.all() %}
-                <div class="box-shadow mb-6 rounded-[30px]">
+                <div class="box-shadow mb-5 md:mb-6 rounded-[30px]">
                     <h4>
                         <button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="section-{{ faq.id }}" id="accordion-{{ faq.id }}"><span class="accordion-title">{{ faq.heading }}<span class="accordion-icon"></span></span></button>
                     </h4>

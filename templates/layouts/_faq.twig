@@ -5,11 +5,11 @@
 {% set faqs = craft.entries.section('faq').all() %}
 {% if faqs|length %}
     <section>
-        <div class="container my-16">
+        <div class="container my-12 md:my-16">
             <div id="accordionGroup" class="accordion">
                 {% for faq in faqs %}
                     <div class="box-shadow mb-6 rounded-[30px]">
-                        <h4>
+                        <h4 class="pr-5">
                             <button type="button" aria-expanded="false" class="accordion-trigger" aria-controls="section-{{ faq.id }}" id="accordion-{{ faq.id }}"><span class="accordion-title">{{ faq.title }}<span class="accordion-icon"></span></span></button>
                         </h4>
                         <div id="section-{{ faq.id }}" role="region" aria-labelledby="accordion-{{ faq.id }}" class="accordion-panel" hidden>

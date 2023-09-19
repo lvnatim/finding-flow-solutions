@@ -37,9 +37,13 @@ img {
   opacity: 0.4;
   padding-left: 0;
 
-  > li:not(:last-child)::after {
-    content: "/";
-    margin: 0 8px;
+  > li {
+    font-size: 14px;
+
+    &:not(:last-child)::after {
+      content: "/";
+      margin: 0 8px;
+    }
   }
 }
 

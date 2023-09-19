@@ -1,12 +1,12 @@
 <section>
-    <div class="container mb-24">
-        <div class="grid grid-cols-2 gap-x-4 gap-y-16">
+    <div class="container mb-12 md:mb-16 lg:mb-20 xl:mb-24">
+        <div class="grid md:grid-cols-2 gap-x-4 gap-y-8 md:gap-y-16">
             {% for card in matrixBlock.getDescendants(1) %}
                 <div class="border-blend">
-                    <div class="px-8 pt-6 pb-12">
+                    <div class="px-5 md:px-8 pt-6 pb-6 md:pb-12">
                         {% set icon = card.icon.one() %}
                         {% if icon %}<div class="flex items-center justify-center mx-auto mb-4" style="height:45px;width:70px;"><img src="{{ icon.url }}" alt="{{ icon.alt }}"/></div>{% endif %}
-                        {% if card.heading %}<h3 class="text-center h-[100px]">{{ card.heading }}</h3>{% endif %}
+                        {% if card.heading %}<h3 class="text-center md:min-h-[60px] xl:min-h-[90px]">{{ card.heading }}</h3>{% endif %}
                         {{ card.mainContent }}
                         {% if matrixBlock.href %}<div class="text-center"><a class="btn" href="{{ matrixBlock.href }}"><span>{{ matrixBlock.label ? matrixBlock.label : 'Learn More' }}</span></a></div>{% endif %}
                     </div>

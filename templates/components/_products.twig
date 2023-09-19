@@ -1,7 +1,7 @@
 <section>
-    <div class="container my-24">
+    <div class="container my-12 md:my-16 lg:my-20 xl:my-24">
         {% if matrixBlock.heading %}<h2 class="{{ matrixBlock.alignment == 'centered' ? 'text-center' }}">{{ matrixBlock.heading }}</h2>{% endif %}
-        <div class="grid grid-cols-3 gap-x-10">
+        <div class="grid md:grid-cols-3 gap-5 lg:gap-8 xl:gap-10">
             {% for product in matrixBlock.getDescendants(1) %}
                 {% set icon = product.icon ? product.icon.one() %}
                 <a href="{{ product.href }}" class="material border-[4px] border-black rounded-[30px] p-3" target="_blank">

@@ -1,4 +1,4 @@
-<section class="waves pt-16">
+<section class="waves pt-8 md:pt-16">
     {% for childBlock in matrixBlock.getDescendants(1) %}
         {% include 'components/_' ~ childBlock.type|snake|replace({"_":"-"}) with {matrixBlock: childBlock} %}
     {% endfor %}
