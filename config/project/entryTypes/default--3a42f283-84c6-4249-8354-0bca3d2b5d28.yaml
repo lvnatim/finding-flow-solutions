@@ -45,10 +45,31 @@ fieldLayouts:
         name: Content
         uid: f61af56d-ca90-4de5-ba95-2cf8368ca08c
         userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 2325607c-3db2-4c1a-a15f-267b0024ea84 # SEO
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8fa056c1-1bdb-4f35-9154-7a38096fd4e4
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: b4b43a70-4994-4813-b756-3925696fdc3b
+        userCondition: null
 handle: default
 hasTitleField: true
 name: Default
 section: 617bb52a-f767-4d7a-bd8f-f36672cb2156 # Purchasing
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null

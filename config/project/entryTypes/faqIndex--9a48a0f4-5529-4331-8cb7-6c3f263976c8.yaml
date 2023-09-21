@@ -33,10 +33,31 @@ fieldLayouts:
         name: Content
         uid: e98b238d-3ecd-42be-a47f-16455cd6ef2f
         userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 2325607c-3db2-4c1a-a15f-267b0024ea84 # SEO
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f10d7c0e-db86-4f3b-9bba-6c37d8e5d6cf
+            userCondition: null
+            warning: null
+            width: 100
+        name: SEO
+        uid: ed9902c7-0010-4f39-a529-d57f696a201e
+        userCondition: null
 handle: faqIndex
 hasTitleField: true
 name: 'FAQ Index'
 section: a3369fa2-1d90-410c-914b-4ae22a04ace8 # FAQ Index
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

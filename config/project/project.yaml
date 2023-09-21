@@ -1,4 +1,4 @@
-dateModified: 1693851094
+dateModified: 1695315503
 email:
   fromEmail: tim.lu@ourlog.ca
   fromName: 'Finding Flow Solutions'
@@ -60,6 +60,7 @@ meta:
     700887bc-f89e-4d2e-8918-bc88e369512d: Default # Default
     746551af-25b1-44fe-9664-5b486f338e8f: Resources # Resources
     900588c8-03a0-400d-9c78-fa38f2abcc1e: Grades # Grades
+    2325607c-3db2-4c1a-a15f-267b0024ea84: SEO # SEO
     4790034a-9974-43d3-b42d-f91993136fec: Navigation # Navigation
     61448138-f095-4eff-946c-4d97afc6e826: Materials # Materials
     a1c61c3c-f4e1-42f5-9932-fb5edec976e0: Reviews # Reviews
@@ -113,11 +114,15 @@ plugins:
     edition: standard
     enabled: true
     schemaVersion: 2.3.0
+  seo:
+    edition: standard
+    enabled: true
+    schemaVersion: 3.2.0
 system:
   edition: solo
   live: true
   name: 'Finding Flow Solutions'
-  schemaVersion: 4.4.0.4
+  schemaVersion: 4.5.3.0
   timeZone: America/Los_Angeles
 users:
   allowPublicRegistration: false
